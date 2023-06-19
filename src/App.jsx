@@ -17,35 +17,29 @@ function App() {
       <form>
         <div className="form-row">
           <div className="col">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-            />
+            <input type="text" className="form-control" placeholder="Prénom" />
           </div>
           <div className="col">
             <input
               type="text"
               className="form-control"
-              placeholder="Last name"
+              placeholder="Nom de famille"
             />
           </div>
         </div>
         <div className="form-group">
-          <label for="exampleInputEmail1">Email address</label>
           <input
             type="email"
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Número de mobille ou e-mail"
           />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
         </div>
+        <label for="labelDateDeNaissance">Date de naissance</label>
         <DatePicker selected={date} onChange={(date) => setDate(date)} />
         <div class="custom-control custom-radio custom-control-inline">
+          <label for="labelGenre">Genre</label>
           <input
             type="radio"
             id="customRadioInline1"
@@ -53,7 +47,7 @@ function App() {
             class="custom-control-input"
           />
           <label class="custom-control-label" for="customRadioInline1">
-            Toggle this custom radio
+            Femme
           </label>
         </div>
         <div class="custom-control custom-radio custom-control-inline">
@@ -64,29 +58,9 @@ function App() {
             class="custom-control-input"
           />
           <label class="custom-control-label" for="customRadioInline1">
-            Toggle this custom radio
+            Homme
           </label>
         </div>
-        <div className="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <div className="form-group form-check">
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-
         <div className="form-group">
           <label for="exampleFormControlFile1">Example file input</label>
           <input
@@ -95,7 +69,9 @@ function App() {
             id="exampleFormControlFile1"
           />
         </div>
-        <text>En cliquant blabla</text>
+        <small id="emailHelp" className="form-text text-muted">
+          En cliquant sur S'inscrire
+        </small>
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
