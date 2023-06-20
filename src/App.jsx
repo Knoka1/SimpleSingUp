@@ -13,7 +13,7 @@ function App() {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="signup template d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="form_container p-5">
         <form>
           <div className="container box rounded">
@@ -55,12 +55,12 @@ function App() {
                 onChange={(date) => setDate(date)}
               />
             </div>
-            <div className="flex">
+            <div className="">
               <label htmlFor="genre" className="label">
                 Genre
               </label>
               <div className="row mb-2">
-                <div className="col box ">
+                <div className="col ">
                   <input
                     type="radio"
                     id="customRadioInline1"
@@ -74,7 +74,7 @@ function App() {
                     Femme
                   </label>
                 </div>
-                <div className="col box ">
+                <div className="col">
                   <input
                     type="radio"
                     id="customRadioInline1"
@@ -90,26 +90,31 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="form-group stylized_box">
+            <label htmlFor="photo" className="label">
+              Photo
+            </label>
+
+            <div className="form-group stylized_box mb-5">
               <input
                 type="file"
                 className="form-control-file"
                 id="exampleFormControlFile1"
               />
-              <br />
               <small>or drop files here</small>
             </div>
-            <div>
-              <input
-                type="checkbox"
-                className="custom-control custom-checkbox"
-                id="check"
-              />
-              <label htmlFor="check">Remeber me</label>
-            </div>
-
-            <div className="d-grid">
-              <button className="btn btn-primary">Submit</button>
+            <small className="form-text text-muted">
+              En cliquant sur S'inscrire, vous acceptez nos{" "}
+              <a href="#">Condition générales</a>. Découvrez comment nous
+              recueillon, utilisons e partageons vos données en lisant notre{" "}
+              <a href="#">Politique de confidentialité</a> et comment nous
+              utilisons les cookies et autres technologies similaires en
+              consultant notre{" "}
+              <a href="#">Politique d'utilisation des cookies</a>. Vous recevrez
+              peut-être des notifications par texto de notre part et vous pouvez
+              à tout moment vous désabonner.
+            </small>
+            <div className="d-grid mt-2">
+              <button className=" ">S'inscrire</button>
             </div>
           </div>
         </form>
