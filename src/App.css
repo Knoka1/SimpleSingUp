@@ -4,21 +4,30 @@
 }
 
 .form_container {
-  width: 30%;
+  width: 50%;
+}
+
+.subText {
+  color: gray;
+}
+
+.box {
+  border: 1px;
+  border-style: solid;
+  border-color: grey;
+  padding: 8px;
 }
 
 .singup {
-  display: flex;
-  flex-direction: column;
 }
 @media (max-width: 1000px) {
   .form_container {
-    width: 45%;
+    width: 65%;
   }
 }
 
 @media (max-width: 600px) {
   .form_container {
-    width: 65%;
+    width: 75%;
   }
 }
