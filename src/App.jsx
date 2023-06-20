@@ -17,10 +17,9 @@ function App() {
       <div className="form_container p-5">
         <form>
           <div className="container box rounded">
-            <div className="">
-              <h3 className="text-left">S'inscrire</h3>
-              <h6 className="subText text-left">C'est rapide et facile</h6>
-            </div>
+            <h3 className="text-left title">S'inscrire</h3>
+            <h6 className="subText text-left">C'est rapide et facile</h6>
+            <hr color="gray" />
             <div className="mb-2 row">
               <div className="col">
                 <input
@@ -100,7 +99,7 @@ function App() {
                 className="form-control-file"
                 id="exampleFormControlFile1"
               />
-              <small>or drop files here</small>
+              <small>ou déposer des fichiers ici</small>
             </div>
             <small className="form-text text-muted">
               En cliquant sur S'inscrire, vous acceptez nos{" "}

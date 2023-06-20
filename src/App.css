@@ -2,30 +2,31 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 /* CLASS FOR TESTING ONLY !! DELETE THIS !! */
 .bg-color {
   background-color: aqua;
 }
-
 .form_container {
   width: 50%;
 }
-
 .custom-control-label {
   margin-left: 5px;
 }
 .form-control-file {
   height: 10vh;
   width: 100%;
+  cursor: pointer;
 }
 .label {
   color: gray;
 }
-
+.title {
+  font-weight: bold;
+}
 .subText {
   color: gray;
 }
-
 .stylized_box {
   border: 2px;
   border-style: dashed;
