@@ -13,9 +13,9 @@ function App() {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div>
+    <>
       <form>
-        <div className="form-row">
+        <div className="form-group row">
           <div className="col">
             <input type="text" className="form-control" placeholder="Prénom" />
           </div>
@@ -27,15 +27,18 @@ function App() {
             />
           </div>
         </div>
-        <div className="form-group">
-          <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Número de mobille ou e-mail"
-          />
+        <div className="form-group row">
+          <div className="form-group col">
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Número de mobille ou e-mail"
+            />
+          </div>
         </div>
+
         <label for="labelDateDeNaissance">Date de naissance</label>
         <DatePicker selected={date} onChange={(date) => setDate(date)} />
         <div class="custom-control custom-radio custom-control-inline">
@@ -62,7 +65,6 @@ function App() {
           </label>
         </div>
         <div className="form-group">
-          <label for="exampleFormControlFile1">Example file input</label>
           <input
             type="file"
             className="form-control-file"
@@ -73,10 +75,10 @@ function App() {
           En cliquant sur S'inscrire
         </small>
         <button type="submit" className="btn btn-primary">
-          Submit
+          S'inscrire
         </button>
       </form>
-    </div>
+    </>
   );
 }
 
