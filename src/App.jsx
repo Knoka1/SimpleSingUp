@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div className="signup template d-flex justify-content-center align-items-center vh-100">
-      <div className="form_container p-5 rounded">
+      <div className="form_container p-5">
         <form>
-          <div className="container box">
+          <div className="container box rounded">
             <div className="">
               <h3 className="text-left">S'inscrire</h3>
               <h6 className="subText text-left">C'est rapide et facile</h6>
@@ -38,7 +38,6 @@ function App() {
               </div>
             </div>
             <div className="mb-2">
-              <label htmlFor="Email">Email</label>
               <input
                 type="email"
                 placeholder="Número de mobille ou e-mail"
@@ -46,12 +45,59 @@ function App() {
               />
             </div>
             <div className="mb-2">
-              <label htmlFor="naissance">Date de naissance</label>
+              <label htmlFor="naissance" className="label">
+                Date de naissance
+              </label>
+              <br />
               <DatePicker
                 className="form-control"
                 selected={date}
                 onChange={(date) => setDate(date)}
               />
+            </div>
+            <div className="flex">
+              <label htmlFor="genre" className="label">
+                Genre
+              </label>
+              <div className="row mb-2">
+                <div className="col box ">
+                  <input
+                    type="radio"
+                    id="customRadioInline1"
+                    name="customRadioInline1"
+                    className="custom-control-input"
+                  />
+                  <label
+                    className="custom-control-label"
+                    for="customRadioInline1"
+                  >
+                    Femme
+                  </label>
+                </div>
+                <div className="col box ">
+                  <input
+                    type="radio"
+                    id="customRadioInline1"
+                    name="customRadioInline1"
+                    className="custom-control-input"
+                  />
+                  <label
+                    className="custom-control-label"
+                    for="customRadioInline1"
+                  >
+                    Homme
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className="form-group stylized_box">
+              <input
+                type="file"
+                className="form-control-file"
+                id="exampleFormControlFile1"
+              />
+              <br />
+              <small>or drop files here</small>
             </div>
             <div>
               <input

@@ -2,15 +2,37 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+/* CLASS FOR TESTING ONLY !! DELETE THIS !! */
+.bg-color {
+  background-color: aqua;
+}
 
 .form_container {
   width: 50%;
+}
+
+.custom-control-label {
+  margin-left: 5px;
+}
+.form-control-file {
+  background-color: aquamarine;
+  height: 10vh;
+  width: 100%;
+}
+.label {
+  color: gray;
 }
 
 .subText {
   color: gray;
 }
 
+.stylized_box {
+  border: 1px;
+  border-style: dotted;
+  border-color: grey;
+  padding: 8px;
+}
 .box {
   border: 1px;
   border-style: solid;
@@ -18,8 +40,6 @@
   padding: 8px;
 }
 
-.singup {
-}
 @media (max-width: 1000px) {
   .form_container {
     width: 65%;
