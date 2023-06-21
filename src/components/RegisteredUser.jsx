@@ -1,7 +1,7 @@
 import React from "react";
 import "../scss/styles.scss";
 
-const RegisteredUsers = () => {
+const RegisteredUser = () => {
   return (
     <div className="d-flex justify-content-center align-items-center vh-10 ">
       <div className="p-5 box rounded ">
@@ -15,4 +15,4 @@ const RegisteredUsers = () => {
   );
 };
 
-export default RegisteredUsers;
+export default RegisteredUser;

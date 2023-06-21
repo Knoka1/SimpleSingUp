@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { Tooltip, Toast, Popover } from "bootstrap";
-import * as bootstrap from "bootstrap";
-import Alert from "bootstrap/js/dist/alert";
-import DatePicker from "react-datepicker";
+import React, { useState } from "react";
+import SignUp from "./components/SignUp";
+import RegisteredUser from "./components/RegisteredUser";
 
 import "./App.css";
 import "./scss/styles.scss";
 import "react-datepicker/dist/react-datepicker.css";
-import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <div>
       <SignUp />
+      <div>
+        <RegisteredUser />
+      </div>
     </div>
   );
 }
