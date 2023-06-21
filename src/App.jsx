@@ -19,8 +19,8 @@ function App() {
           <div className="container box rounded">
             <h3 className="text-left title">S'inscrire</h3>
             <h6 className="subText text-left">C'est rapide et facile</h6>
-            <hr color="gray" />
             <div className="mb-2 row">
+              <hr color="gray" />
               <div className="col">
                 <input
                   type="text"
