@@ -13,7 +13,7 @@ function App() {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center ">
       <div className="form_container p-5">
         <form>
           <div className="container box rounded">
