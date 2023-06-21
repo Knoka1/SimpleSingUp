@@ -1,0 +1,45 @@
+.form_container {
+  width: 50%;
+  height: 90vh;
+}
+.custom-control-label {
+  margin-left: 5px;
+}
+.form-control-file {
+  height: 10vh;
+  width: 100%;
+  cursor: pointer;
+}
+.label {
+  color: gray;
+}
+.title {
+  font-weight: bold;
+}
+.subText {
+  color: gray;
+}
+.stylized_box {
+  border: 2px;
+  border-style: dashed;
+  border-color: rgb(117, 117, 226);
+  background-color: rgb(222, 222, 222);
+  padding: 8px;
+}
+.box {
+  border: 1px;
+  border-style: solid;
+  border-color: grey;
+}
+
+@media (max-width: 1000px) {
+  .form_container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form_container {
+    width: 75%;
+  }
+}
