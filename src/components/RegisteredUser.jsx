@@ -28,7 +28,7 @@ const registeredUsersMock = [
 
 const RegisteredUser = () => {
   return (
-    <div className="card mb-3 card_custom container">
+    <div className="card mb-3 card_custom container ">
       <h3>List of Users: </h3>
       <hr />
       {registeredUsersMock.map((object, i) => {

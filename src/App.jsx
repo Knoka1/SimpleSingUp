@@ -12,7 +12,7 @@ function App() {
       <div className=" bg-color2">
         <SignUp />
       </div>
-      <div className="d-flex bg-color3">
+      <div className="d-flex bg-color3 justify-content-center align-items-center">
         <RegisteredUser />
       </div>
     </div>
