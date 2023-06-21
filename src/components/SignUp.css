@@ -1,5 +1,5 @@
 .form_container {
-  width: 50%;
+  width: 60%;
 }
 .custom-control-label {
   margin-left: 5px;
@@ -34,12 +34,12 @@
 
 @media (max-width: 1000px) {
   .form_container {
-    width: 65%;
+    width: 75%;
   }
 }
 
 @media (max-width: 600px) {
   .form_container {
-    width: 75%;
+    width: 85%;
   }
 }

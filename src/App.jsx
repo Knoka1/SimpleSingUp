@@ -8,9 +8,11 @@ import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
   return (
-    <div>
-      <SignUp />
-      <div>
+    <div className="bg-color d-flex">
+      <div className=" bg-color2">
+        <SignUp />
+      </div>
+      <div className="d-flex bg-color3">
         <RegisteredUser />
       </div>
     </div>
