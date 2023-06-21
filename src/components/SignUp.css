@@ -1,12 +1,11 @@
 .form_container {
   width: 50%;
-  height: 90vh;
 }
 .custom-control-label {
   margin-left: 5px;
 }
 .form-control-file {
-  height: 10vh;
+  height: 80px;
   width: 100%;
   cursor: pointer;
 }
@@ -30,6 +29,7 @@
   border: 1px;
   border-style: solid;
   border-color: grey;
+  padding: 8px;
 }
 
 @media (max-width: 1000px) {

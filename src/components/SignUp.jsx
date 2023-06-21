@@ -8,20 +8,14 @@ const SignUp = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="d-flex justify-content-center align-items-center">
-      <div className="form_container p-5 box rounded ">
+    <div className="d-flex justify-content-center align-items-center ">
+      <div className="form_container p-5">
         <form>
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <h3 className="text-left title">S'inscrire</h3>
-                <h6 className="subText text-left">C'est rapide et facile</h6>
-              </div>
-              <div className="col"></div>
-              <hr color="gray" />
-            </div>
-
+          <div className="container box rounded">
+            <h3 className="text-left title">S'inscrire</h3>
+            <h6 className="subText text-left">C'est rapide et facile</h6>
             <div className="mb-2 row">
+              <hr color="gray" />
               <div className="col">
                 <input
                   type="text"
@@ -60,7 +54,7 @@ const SignUp = () => {
                 Genre
               </label>
               <div className="row mb-2">
-                <div className="col">
+                <div className="col ">
                   <input
                     type="radio"
                     id="customRadioInline1"
@@ -69,7 +63,7 @@ const SignUp = () => {
                   />
                   <label
                     className="custom-control-label"
-                    htmlFor="customRadioInline1"
+                    for="customRadioInline1"
                   >
                     Femme
                   </label>
@@ -83,7 +77,7 @@ const SignUp = () => {
                   />
                   <label
                     className="custom-control-label"
-                    htmlFor="customRadioInline1"
+                    for="customRadioInline1"
                   >
                     Homme
                   </label>
