@@ -5,6 +5,7 @@ const RegisteredUser = () => {
   return (
     <div className="card mb-3 card_custom container">
       <h3>List of Users: </h3>
+      <hr />
       <div className="row no-gutters">
         <div className="col-md-2">
           <img
