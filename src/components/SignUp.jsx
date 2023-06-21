@@ -63,7 +63,7 @@ const SignUp = () => {
                   />
                   <label
                     className="custom-control-label"
-                    for="customRadioInline1"
+                    htmlFor="customRadioInline1"
                   >
                     Femme
                   </label>
@@ -77,7 +77,7 @@ const SignUp = () => {
                   />
                   <label
                     className="custom-control-label"
-                    for="customRadioInline1"
+                    htmlFor="customRadioInline1"
                   >
                     Homme
                   </label>
