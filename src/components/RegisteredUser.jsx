@@ -3,7 +3,7 @@ import "../scss/styles.scss";
 
 const RegisteredUser = () => {
   return (
-    <div className="d-flex justify-content-center align-items-center vh-10 ">
+    <div className=" justify-content-center align-items-center vh-10 ">
       <div className="p-5 box rounded ">
         <h3>Users:</h3>
         <div>

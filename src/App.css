@@ -3,12 +3,22 @@
   margin: 0 auto;
 }
 
+.main-container {
+  flex: content;
+  flex-direction: row;
+}
+
+.sub-container {
+  flex: content;
+  flex-direction: column;
+}
 /* CLASS FOR TESTING ONLY !! DELETE THIS !! */
 .bg-color {
   background-color: aqua;
-  width: 500px;
 }
 .bg-color2 {
   background-color: brown;
-  width: 200px;
+}
+.bg-color3 {
+  background-color: blueviolet;
 }
