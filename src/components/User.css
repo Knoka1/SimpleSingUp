@@ -1,0 +1,15 @@
+.card_img_custom {
+  border: 3px solid;
+  border-color: azure;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  margin-top: 12px;
+  object-fit: cover;
+}
+.card_title_custom {
+  margin-left: 10px;
+}
+.card_text_custom {
+  margin-left: 10px;
+}
