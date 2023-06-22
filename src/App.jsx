@@ -21,20 +21,14 @@ function App() {
     <>
       {isMobile ? (
         <div className="d-flex-inline">
-          <div className="">
-            <SignUp />
-          </div>
-          <div className="">
-            <div className="d-flex justify-content-center align-items-center responsive_container p-5">
-              <RegisteredUser />
-            </div>
+          <SignUp />
+          <div className="d-flex justify-content-center align-items-center responsive_container p-5">
+            <RegisteredUser />
           </div>
         </div>
       ) : (
         <div className="d-flex">
-          <div className="">
-            <SignUp />
-          </div>
+          <SignUp />
           <div className="d-flex justify-content-center align-items-center">
             <RegisteredUser />
           </div>
