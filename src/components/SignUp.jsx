@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 
+import { QuestionCircleFill, X, Question } from "react-bootstrap-icons";
 import "../scss/styles.scss";
 import "react-datepicker/dist/react-datepicker.css";
 import "./SignUp.css";
@@ -42,6 +43,7 @@ const SignUp = () => {
               <label htmlFor="naissance" className="label">
                 Date de naissance
               </label>
+              <QuestionCircleFill className="icon" />
               <br />
               <DatePicker
                 className="form-control"
@@ -53,6 +55,8 @@ const SignUp = () => {
               <label htmlFor="genre" className="label">
                 Genre
               </label>
+              <QuestionCircleFill className="icon" />
+
               <div className="row mb-2">
                 <div className="col ">
                   <input
@@ -84,11 +88,10 @@ const SignUp = () => {
                 </div>
               </div>
             </div>
-            <label htmlFor="photo" className="label">
-              Photo
-            </label>
+            <label htmlFor="photo">Photo</label>
+            <Question className="mb-1" />
 
-            <div className="form-group stylized_box mb-5">
+            <div className="form-group stylized_box mb-5 mt-3">
               <input
                 type="file"
                 className="form-control-file"

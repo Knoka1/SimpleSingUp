@@ -31,6 +31,11 @@
   border-color: grey;
   padding: 8px;
 }
+.icon {
+  margin-left: 5px;
+  margin-bottom: 1px;
+  color: rgb(114, 114, 114);
+}
 
 @media (max-width: 1000px) {
   .form_container {
