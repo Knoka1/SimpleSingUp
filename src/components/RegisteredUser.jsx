@@ -1,6 +1,5 @@
 import React from "react";
 import "../scss/styles.scss";
-import "./RegisteredUser.css";
 import User from "./User";
 
 const registeredUsersMock = [
