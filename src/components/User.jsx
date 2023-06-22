@@ -1,15 +1,18 @@
 import React from "react";
 import "../scss/styles.scss";
 import "./User.css";
-const User = ({ name, img, gender }) => {
+const User = ({ name, img, gender, status }) => {
   return (
     <div className="no-gutters d-flex justify-content-center align-items-center">
       <div className="col-md-2 ">
-        <img
-          src={img}
-          className="card-img card_img_custom "
-          alt="Avatar of registered user"
-        />
+        <div className={`container_custom ${status ?? "online"}`}>
+          <img
+            src={img}
+            className="card-img card_img_custom "
+            alt="Avatar of registered user"
+          />
+          <div className="status"></div>
+        </div>
       </div>
       <div className="col-md-11 ">
         <div className="card-body">

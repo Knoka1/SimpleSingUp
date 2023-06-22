@@ -1,6 +1,6 @@
 .card_img_custom {
-  border: 3px solid;
-  border-color: azure;
+  border: 2px solid;
+  border-color: rgba(161, 167, 167, 0.737);
   border-radius: 50%;
   width: 55px;
   height: 55px;
@@ -9,7 +9,45 @@
 }
 .card_title_custom {
   margin-left: 10px;
+  color: grey;
+  font-weight: bold;
 }
 .card_text_custom {
   margin-left: 10px;
+}
+.container_custom {
+  position: relative;
+}
+.container_custom.online .status {
+  /* use on empty div */
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 53px;
+  left: 40px;
+  z-index: 2;
+  background: #0bbe0b;
+  border-radius: 50%;
+}
+.container_custom.offline .status {
+  /* use on empty div */
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 53px;
+  left: 40px;
+  z-index: 2;
+  background: #be0b0b;
+  border-radius: 50%;
+}
+.container_custom.inactive .status {
+  /* use on empty div */
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 53px;
+  left: 40px;
+  z-index: 2;
+  background: #d0d70d;
+  border-radius: 50%;
 }
