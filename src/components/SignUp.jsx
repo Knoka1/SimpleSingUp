@@ -25,7 +25,7 @@ const SignUp = () => {
     console.log(user);
   };
   return (
-    <div className="d-flsex justify-content-center align-items-center ">
+    <div className="d-flex justify-content-center align-items-center ">
       <div className="form_container p-5">
         <form onSubmit={formSubmissionHandler}>
           <div className="container box rounded">
