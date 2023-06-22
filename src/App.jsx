@@ -20,20 +20,22 @@ function App() {
   return (
     <>
       {isMobile ? (
-        <div className="bg-color d-flex-inline">
-          <div className=" bg-color2">
+        <div className="d-flex-inline">
+          <div className="">
             <SignUp />
           </div>
-          <div className="d-flex bg-color3 justify-content-center align-items-center">
-            <RegisteredUser />
+          <div className="">
+            <div className="d-flex justify-content-center align-items-center responsive_container p-5">
+              <RegisteredUser />
+            </div>
           </div>
         </div>
       ) : (
-        <div className="bg-color d-flex">
-          <div className=" bg-color2">
+        <div className="d-flex">
+          <div className="">
             <SignUp />
           </div>
-          <div className="d-flex bg-color3 justify-content-center align-items-center">
+          <div className="d-flex justify-content-center align-items-center">
             <RegisteredUser />
           </div>
         </div>
