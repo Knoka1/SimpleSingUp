@@ -19,7 +19,6 @@
   position: relative;
 }
 .container_custom.online .status {
-  /* use on empty div */
   position: absolute;
   width: 11px;
   height: 11px;
@@ -30,7 +29,6 @@
   border-radius: 50%;
 }
 .container_custom.offline .status {
-  /* use on empty div */
   position: absolute;
   width: 11px;
   height: 11px;
@@ -41,7 +39,6 @@
   border-radius: 50%;
 }
 .container_custom.inactive .status {
-  /* use on empty div */
   position: absolute;
   width: 11px;
   height: 11px;
