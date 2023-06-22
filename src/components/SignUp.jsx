@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import DatePicker from "react-datepicker";
 
 import { QuestionCircleFill, X, Question } from "react-bootstrap-icons";
@@ -6,12 +6,28 @@ import "../scss/styles.scss";
 import "react-datepicker/dist/react-datepicker.css";
 import "./SignUp.css";
 const SignUp = () => {
-  const [date, setDate] = useState(new Date());
+  const prenomInputRef = useRef();
+  const nomInputRef = useRef();
+  const emailInputRef = useRef();
+  const genreHommeInputRef = useRef();
+  const photoInputRef = useRef();
 
+  const [date, setDate] = useState(new Date());
+  const formSubmissionHandler = (event) => {
+    event.preventDefault();
+    const user = {
+      name: `${prenomInputRef.current.value} ${nomInputRef.current.value}`,
+      email: `${emailInputRef.current.value}`,
+      naissance: `${date}`,
+      genre: `${genreHommeInputRef.current.value === "on" ? "Homme" : "Femme"}`,
+      photo: `${photoInputRef}`,
+    };
+    console.log(user);
+  };
   return (
-    <div className="d-flex justify-content-center align-items-center ">
+    <div className="d-flsex justify-content-center align-items-center ">
       <div className="form_container p-5">
-        <form>
+        <form onSubmit={formSubmissionHandler}>
           <div className="container box rounded">
             <h3 className="text-left title">S'inscrire</h3>
             <h6 className="subText text-left">C'est rapide et facile</h6>
@@ -19,6 +35,7 @@ const SignUp = () => {
               <hr color="gray" />
               <div className="col">
                 <input
+                  ref={prenomInputRef}
                   type="text"
                   placeholder="Prénom"
                   className="form-control"
@@ -26,6 +43,7 @@ const SignUp = () => {
               </div>
               <div className="col">
                 <input
+                  ref={nomInputRef}
                   type="nom"
                   placeholder="Nom de famille"
                   className="form-control"
@@ -34,6 +52,7 @@ const SignUp = () => {
             </div>
             <div className="mb-2">
               <input
+                ref={emailInputRef}
                 type="email"
                 placeholder="Número de mobille ou e-mail"
                 className="form-control"
@@ -74,6 +93,7 @@ const SignUp = () => {
                 </div>
                 <div className="col">
                   <input
+                    ref={genreHommeInputRef}
                     type="radio"
                     id="customRadioInline1"
                     name="customRadioInline1"
@@ -93,6 +113,7 @@ const SignUp = () => {
 
             <div className="form-group stylized_box mb-5 mt-2">
               <input
+                ref={photoInputRef}
                 type="file"
                 className="form-control-file"
                 id="exampleFormControlFile1"
@@ -111,7 +132,7 @@ const SignUp = () => {
               à tout moment vous désabonner.
             </small>
             <div className="d-grid mt-2">
-              <button className=" ">S'inscrire</button>
+              <button>S'inscrire</button>
             </div>
           </div>
         </form>
