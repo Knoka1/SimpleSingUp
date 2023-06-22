@@ -43,7 +43,7 @@ const SignUp = () => {
               <label htmlFor="naissance" className="label">
                 Date de naissance
               </label>
-              <QuestionCircleFill className="icon" />
+              <QuestionCircleFill className="tooltip_custom" />
               <br />
               <DatePicker
                 className="form-control"
@@ -55,7 +55,7 @@ const SignUp = () => {
               <label htmlFor="genre" className="label">
                 Genre
               </label>
-              <QuestionCircleFill className="icon" />
+              <QuestionCircleFill className="tooltip_custom" />
 
               <div className="row mb-2">
                 <div className="col ">
@@ -91,7 +91,7 @@ const SignUp = () => {
             <label htmlFor="photo">Photo</label>
             <Question className="mb-1" />
 
-            <div className="form-group stylized_box mb-5 mt-3">
+            <div className="form-group stylized_box mb-5 mt-2">
               <input
                 type="file"
                 className="form-control-file"

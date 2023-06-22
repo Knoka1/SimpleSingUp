@@ -31,10 +31,11 @@
   border-color: grey;
   padding: 8px;
 }
-.icon {
+.tooltip_custom {
   margin-left: 5px;
   margin-bottom: 1px;
   color: rgb(114, 114, 114);
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
