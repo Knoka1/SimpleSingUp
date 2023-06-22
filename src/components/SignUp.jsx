@@ -13,13 +13,14 @@ const SignUp = () => {
   const photoInputRef = useRef();
 
   const [date, setDate] = useState(new Date());
+  const [genre, setGenre] = useState("Homme");
   const formSubmissionHandler = (event) => {
     event.preventDefault();
     const user = {
       name: `${prenomInputRef.current.value} ${nomInputRef.current.value}`,
       email: `${emailInputRef.current.value}`,
       naissance: `${date}`,
-      genre: `${genreHommeInputRef.current.value === "on" ? "Homme" : "Femme"}`,
+      genre: `${genre}`,
       photo: `${photoInputRef}`,
     };
     console.log(user);
@@ -83,6 +84,7 @@ const SignUp = () => {
                     id="customRadioInline1"
                     name="customRadioInline1"
                     className="custom-control-input"
+                    onChange={() => setGenre("Femme")}
                   />
                   <label
                     className="custom-control-label"
@@ -93,11 +95,13 @@ const SignUp = () => {
                 </div>
                 <div className="col">
                   <input
-                    ref={genreHommeInputRef}
                     type="radio"
                     id="customRadioInline1"
                     name="customRadioInline1"
                     className="custom-control-input"
+                    onChange={() => {
+                      setGenre("Homme");
+                    }}
                   />
                   <label
                     className="custom-control-label"
